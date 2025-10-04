@@ -1,16 +1,69 @@
-# React + Vite
+# AI Background Remover
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Remove image backgrounds instantly in your browser. This app provides a fast, intuitive experience for removing backgrounds from JPG, PNG, or WEBP images.
 
-Currently, two official plugins are available:
+## Live Preview
+[AI Background Remover](https://ai-bg-remover-nu.vercel.app/) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+- Drag & drop or click to upload images
+- Supports JPG, PNG, and WEBP formats
+- Instant background removal using AI
+- Preview original and processed images side-by-side
+- Download the processed image
+- Process multiple images easily with a reset button
+- Handles errors gracefully and shows processing status
 
-## React Compiler
+### Tech Stack
+- React 19 + Vite 7
+- Tailwind CSS v4 (`@tailwindcss/vite` plugin)
+- `@imgly/background-removal` for AI background removal
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js 18+
+- npm 9+
+
+### Install
+```bash
+npm install
+```
+
+### Run locally
+```bash
+npm run dev
+```
+
+### Build
+```bash
+npm run build
+```
+
+### Preview production build
+```bash
+npm run preview
+```
+
+---
+
+## Configuration
+
+### Tailwind CSS v4
+- `vite.config.js` registers `@tailwindcss/vite`
+- `src/index.css` imports Tailwind via `@import "tailwindcss";`
+
+---
+
+## Scripts
+- dev: Start Vite dev server
+- build: Build for production (outputs to `dist/`)
+- preview: Preview production build
+- lint: Run ESLint
+
+---
+
+## License
+No license specified.
